@@ -25,12 +25,11 @@ The site is fully responsive, cleanly structured, and dynamically driven using J
 
 ```
 portfolio/
+├── images/
 ├── index.html
 ├── style.css
 ├── script.js
-├── images/
 ├── README.md
-└── assets/
 ```
 
 - `index.html` – Main markup file  
