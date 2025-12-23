@@ -23,7 +23,7 @@ The site is fully responsive, cleanly structured, and dynamically driven using J
 
 ## 📂 Project Structure
 
-```
+``` 
 portfolio/
 ├── images/
 ├── index.html
