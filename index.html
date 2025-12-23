@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Bhardwaj Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">Shivam Bhardwaj</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Journey</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Journey</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Page -->
+    <section id="home" class="hero">
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="geo-shape geo-1"></div>
+            <div class="geo-shape geo-2"></div>
+            <div class="particles">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Cloud & DevOps Enthusiast</h1>
+            <p class="subtitle">Building scalable infra & automations</p>
+            <p>Turning ideas into cloud-ready systems. Linux, AWS, CI/CD, Docker.</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="cta-primary">View My Work</a>
+                <a href="#contact" class="cta-secondary">Get In Touch</a>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat-card">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Skills Learned</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Hands-on Projects</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Goal: DevOps Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me and My Journey -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Focused on Cloud, DevOps, automation, and building reliable systems</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="about-image"></div>
+                    <div class="about-text">
+                        <h3>My Journey</h3>
+                        <p>I'm Shivam, an IT Support Engineer transitioning into Cloud and DevOps. I work with AWS, Linux, Git, Docker, CI/CD basics, and automation. I enjoy understanding how systems behave in real environments and building infrastructure that is stable, scalable, and efficient.</p>
+                        <p>My learning approach is hands-on. I break things, fix them, automate them, and repeat until I fully understand how the system works. This mindset has helped me improve fast and build practical cloud and DevOps projects that strengthen my fundamentals day by day.</p>
+                    </div>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="about-card">
+                        <h4>🎯 Mission</h4>
+                         <p>To build automated, secure, and scalable infrastructure using modern DevOps and cloud practices.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h4>💡 Vision</h4>
+                        <p>To grow into a DevOps Engineer capable of designing cloud-native systems and solving real operational challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Building reliable cloud infrastructure and automated workflows</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-wrapper">
+                    <div class="skills-visual">
+                        <div class="skills-circle" id="skillsCircle">
+                            </div>
+                    </div>
+
+                    <div class="skills-list" id="skillsList">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    
+    <section id="timeline" class="fade-in">
+    <div class="container">
+
+        <!-- Section heading -->
+        <div class="section-header">
+        <h2 class="section-title">My Journey</h2>
+        <p class="section-subtitle">
+            From curious beginner to building real Cloud & DevOps skills
+        </p>
+        </div>
+
+        <!-- Filters (JS reads data-filter) -->
+        <div class="timeline-controls">
+        <button class="timeline-filter active" data-filter="all">All</button>
+        <button class="timeline-filter" data-filter="education">Education</button>
+        <button class="timeline-filter" data-filter="work">Work</button>
+        <button class="timeline-filter" data-filter="project">Projects</button>
+        </div>
+
+        <!-- JS injects timeline items here -->
+        <div class="timeline-container" id="timelineContainer"></div>
+
+    </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="portfolio" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Hands-on work focused on cloud, automation, and DevOps fundamentals</p>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolioGrid">
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="fade-in">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Let's Build Something Useful</h2>
+            <p class="section-subtitle">Infrastructure, Automation, and Cloud Solutions.</p>
+        </div>
+
+        <div class="contact-grid-expansive">
+            <div class="contact-main-content glass-panel">
+                <h3>Get In Touch</h3>
+                <p>I work on practical, impact-focused projects. If you're looking for someone who actually ships and doesn’t just talk, I’m available.</p>
+                
+                <div class="contact-details">
+                    <h4>💼 Available for:</h4>
+                    <div class="availability-tags">
+                        <span class="tag-item">Cloud & DevOps (AWS/Linux)</span>
+                        <span class="tag-item">Automation & CI/CD</span>
+                        <span class="tag-item">Freelance / Part-time</span>
+                        <span class="tag-item">Technical Collaborations</span>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <h4>📍 Location:</h4>
+                    <p class="location-text">Delhi, India (Open to Remote)</p>
+                </div>
+            </div>
+
+            <div class="contact-visual-links">
+                <div class="orb-container">
+                    <div class="orb">
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                        <div class="orb-core">⚡</div>
+                    </div>
+                </div>
+
+                <div class="contact-links-uniform">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-btn">
+                        <span class="icon">🔗</span> LinkedIn
+                    </a>
+                    <a href="https://www.github.com/CBUM-Bhardwaj" target="_blank" class="contact-btn">
+                        <span class="icon">📂</span> GitHub
+                    </a>
+                    <a href="mailto:shivam@example.com" class="contact-btn email-btn">
+                        <span class="icon">✉️</span> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
