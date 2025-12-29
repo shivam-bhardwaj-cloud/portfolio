@@ -28,7 +28,7 @@ const projectsData = [
     description: 'Designed and deployed a containerized online shop using Docker and Kubernetes on a local kind cluster.',
     imageClass: 'k8s-online-shop',
     tags: ['Docker', 'Kubernetes', 'Nginx', 'Linux'],
-    link: 'https://github.com/CBUM-Bhardwaj/online-shop-k8s'
+    link: ''
   },
   {
     title: 'Flask Application Deployment (Docker)',
