@@ -9,23 +9,31 @@ const visualSkills = [
   { icon: '📦', name: 'Docker' },
   { icon: '🔧', name: 'Git' },
   { icon: '⚙️', name: 'CI/CD' },
-  { icon: '📡', name: 'Networking' }
+  // { icon: '📡', name: 'Networking'},
+  { icon: '☸️', name: 'Kubernetes' },
 ];
 
 const listSkills = [
   { title: 'AWS Cloud', desc: 'EC2, S3, IAM, VPC, Load Balancers', percent: '85%' },
-  { title: 'Linux Administration', desc: 'Users, permissions, services', percent: '90%' },
-  { title: 'DevOps & Automation', desc: 'Git, CI/CD, Bash', percent: '80%' },
-  { title: 'Containers & Tools', desc: 'Docker images, volumes, networking', percent: '78%' },
+  { title: 'Linux Administration', desc: 'Users, Permissions, Networking, Services', percent: '90%' },
+  { title: 'DevOps & Automation', desc: 'Git, CI/CD, Bash, Kubernetes', percent: '80%' },
+  { title: 'Containers & Tools', desc: 'Docker images, Compose, volumes, networking', percent: '78%' },
   { title: 'Infrastructure Setup', desc: 'Vagrant, VirtualBox, servers', percent: '82%' }
 ];
 
 /* -------- Projects -------- */
 const projectsData = [
   {
-    title: 'Dockerized Flask App for AWS ECS',
-    description: 'Flask app containerized and deployed to ECS.',
-    imageClass: 'flask-app',
+    title: 'Online Shop Deployment (Docker & Kubernetes)',
+    description: 'Designed and deployed a containerized online shop using Docker and Kubernetes on a local kind cluster.',
+    imageClass: 'k8s-online-shop',
+    tags: ['Docker', 'Kubernetes', 'Nginx', 'Linux'],
+    link: 'https://github.com/CBUM-Bhardwaj/online-shop-k8s'
+  },
+  {
+    title: 'Flask Application Deployment (Docker)',
+    description: 'Containerized a Flask application and deployed it on AWS Ec2 using Docker.',
+    imageClass: 'flask-app-ecs',
     tags: ['AWS', 'Docker', 'ECS'],
     link: 'https://github.com/CBUM-Bhardwaj/flask-app-ecs'
   }
@@ -112,7 +120,9 @@ function renderProjects() {
         <div class="portfolio-image ${p.imageClass}"></div>
         <div class="portfolio-content">
           <h3>${p.title}</h3>
+          <div class="spacer"></div>
           <p>${p.description}</p>
+          <div class="spacer"></div>
           <div class="portfolio-tags">
             ${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}
           </div>

@@ -1299,8 +1299,11 @@ section {
 }
 
 /* Specific portfolio images */
-.portfolio-image.flask-app {
-    background-image: url('images/flask-app.png');
+.portfolio-image.flask-app-ecs {
+    background-image: url('images/flask-app-ecs.png');
+}
+.portfolio-image.k8s-online-shop{
+    background-image: url('images/k8s-online-shop.png');
 }
 
 .portfolio-image.analytics {
@@ -1860,12 +1863,35 @@ footer {
 
 /* ================= PORTFOLIO FIX (FINAL) ================= */
 
+/* Portfolio layout normalization */
 #portfolio .portfolio-grid {
   max-width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
+  align-items: stretch;
+}
+
+#portfolio .portfolio-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#portfolio .portfolio-image {
+  height: 250px;
+  flex-shrink: 0;
+}
+
+#portfolio .portfolio-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#portfolio .portfolio-content p {
+  flex-grow: 1;
 }
 
 .portfolio-link {
@@ -2159,4 +2185,8 @@ footer {
     .static-orb-container {
         height: 150px;
     }
+}
+
+.spacer {
+  height: 12px;
 }
