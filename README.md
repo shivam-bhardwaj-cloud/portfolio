@@ -105,9 +105,9 @@ That’s it — the UI updates automatically!
 
 Let’s build something useful together!
 
-📬 **Email:** [CBUMBHARDWAJ@GMAIL.COM](mailto:CBUMBHARDWAJ@GMAIL.COM)  
-🔗 **LinkedIn:** [https://www.linkedin.com/in/cbum-bhardwaj/](https://www.linkedin.com/in/cbum-bhardwaj/)  
-📂 **GitHub:** [https://github.com/CBUM-Bhardwaj](https://github.com/CBUM-Bhardwaj)
+📬 **Email:** [SHIVAM.BHARDWAJ.CLOUD@GMAIL.COM](mailto:SHIVAM.BHARDWAJ.CLOUD@GMAIL.COM)  
+🔗 **LinkedIn:** [https://www.linkedin.com/in/SHIVAM-BHARDWAJ-CLOUD/](https://www.linkedin.com/in/SHIVAM-BHARDWAJ-CLOUD/)  
+📂 **GitHub:** [https://github.com//SHIVAM-BHARDWAJ-CLOUD](https://github.com//SHIVAM-BHARDWAJ-CLOUD)
 
 ---
 
