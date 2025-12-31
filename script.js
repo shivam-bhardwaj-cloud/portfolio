@@ -94,7 +94,7 @@ function renderSkills() {
           <div class="skill-name">${s.name}</div>
         </div>
       `).join('') +
-      `<div class="skills-center">⚡</div>`;
+      `<div class="skills-center">☁</div>`;
   }
 
   if (list) {
