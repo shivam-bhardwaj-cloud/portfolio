@@ -2033,7 +2033,7 @@ footer {
     background: rgba(118, 169, 250, 0.1);
 }
 
-.email-btn {
+.resume-btn {
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
     border: none;
 }
@@ -2174,7 +2174,7 @@ footer {
     border-color: var(--accent-blue);
 }
 
-.email-btn {
+.resume-btn {
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
     border: none;
     box-shadow: 0 4px 15px var(--accent-glow);
