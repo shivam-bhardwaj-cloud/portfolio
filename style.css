@@ -1299,11 +1299,14 @@ section {
 }
 
 /* Specific portfolio images */
-.portfolio-image.flask-app-ecs {
-    background-image: url('images/flask-app-ecs.png');
+.portfolio-image.online_shop{
+    background-image: url('images/online_shop.png');
 }
-.portfolio-image.k8s-online-shop{
-    background-image: url('images/k8s-online-shop.png');
+.portfolio-image.two-tier-flask-app{
+    background-image: url('images/two-tier-flask-app.png');
+}
+.portfolio-image.aws-s3-static-website {
+    background-image: url('images/aws-s3-static-website.png');
 }
 
 .portfolio-image.analytics {

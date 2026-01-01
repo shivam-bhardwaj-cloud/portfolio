@@ -24,19 +24,27 @@ const listSkills = [
 /* -------- Projects -------- */
 const projectsData = [
   {
-    title: 'Online Shop Deployment (Docker & Kubernetes)',
-    description: 'Designed and deployed a containerized online shop using Docker and Kubernetes on a local kind cluster.',
-    imageClass: 'k8s-online-shop',
-    tags: ['Docker', 'Kubernetes', 'Nginx', 'Linux'],
-    link: 'https://github.com/CBUM-Bhardwaj/flask-app-ecs'
-  },
-  {
-    title: 'Flask Application Deployment (Docker)',
-    description: 'Containerized a Flask application and deployed it on AWS Ec2 using Docker.',
-    imageClass: 'flask-app-ecs',
-    tags: ['AWS', 'Docker', 'ECS'],
-    link: 'https://github.com/CBUM-Bhardwaj/flask-app-ecs'
-  }
+  title: 'Online Shop Deployment (Docker & Kubernetes)',
+  description: 'Containerized a frontend application using Docker and deployed it on a multi-node local Kubernetes cluster (KIND), focusing on deployments, services, scaling, and debugging.',
+  imageClass: 'online_shop',
+  tags: ['Docker', 'Kubernetes', 'Nginx', 'DevOps', 'Linux'],
+  link: 'https://github.com/shivam-bhardwaj-cloud/online_shop'
+},
+{
+  title: 'Two-Tier Flask Application (Docker Compose)',
+  description: 'Two-tier web application built with Flask and MySQL, containerized using Docker Compose to understand service communication, container networking, and persistence.',
+  imageClass: 'two-tier-flask-app',
+  tags: ['Docker', 'Docker Compose', 'Flask', 'MySQL', 'DevOps'],
+  link: 'https://github.com/shivam-bhardwaj-cloud/two-tier-flask-app'
+},
+{
+  title: 'AWS S3 Static Website Hosting',
+  description: 'Hosted a static website on AWS S3 with proper IAM configuration and bucket policies to enable secure public access.',
+  imageClass: 'aws-s3-static-website',
+  tags: ['AWS', 'S3', 'IAM', 'Cloud', 'Static Website'],
+  link: 'https://github.com/shivam-bhardwaj-cloud/aws-s3-static-website'
+}
+
 ];
 
 /* -------- Timeline -------- */
