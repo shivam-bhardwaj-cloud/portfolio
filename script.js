@@ -70,7 +70,7 @@ const timelineData = [
     category: 'work',
     icon: '💼',
     year: '2024 – 2025',
-    title: 'IT Desktop Support (Intern)',
+    title: 'IT Support Intern – Infrastructure & Systems (Linux & Windows)',
     company: 'NetCreativeMind',
     description: ' Hands-on exposure with real IT environments: troubleshooting systems, managing users, configurations, and ensuring smooth technical operations.',
     skills: ['IT Support', 'Linux', 'Troubleshooting']
