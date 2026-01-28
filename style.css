@@ -811,11 +811,9 @@ section {
 .portfolio-card:hover .portfolio-image::before { left: 100%; }
 
 /* Images */
-.portfolio-image.online_shop{ background-image: url('images/online_shop.png'); }
-.portfolio-image.two-tier-flask-app{ background-image: url('images/two-tier-flask-app.png'); }
-.portfolio-image.aws-s3-static-website { background-image: url('images/aws-s3-static-website.png'); }
-.portfolio-image.analytics { background-image: url('images/portfolio-analytics.jpg'); }
-.portfolio-image.music { background-image: url('images/portfolio-music.jpg'); }
+.portfolio-image.online_shop{ background-image: url('images/online_shop.webp'); }
+.portfolio-image.two-tier-flask-app{ background-image: url('images/two-tier-flask-app.webp'); }
+.portfolio-image.aws-s3-static-website { background-image: url('images/aws-s3-static-website.webp'); }
 
 .portfolio-content { padding: 2rem; }
 .portfolio-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); }
