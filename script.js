@@ -2,15 +2,14 @@
    DATA CONFIG : edit only this section
    ========================================================= */
 
-/* -------- Skills -------- */
+/* -------- Skills (Fixed: Premium Icons) -------- */
 const visualSkills = [
-  { icon: '🐧', name: 'Linux' },
-  { icon: '☁️', name: 'AWS' },
-  { icon: '📦', name: 'Docker' },
-  { icon: '🔧', name: 'Git' },
-  { icon: '⚙️', name: 'CI/CD' },
-  // { icon: '📡', name: 'Networking'},
-  { icon: '☸️', name: 'Kubernetes' },
+  { icon: '<i class="fa-brands fa-linux"></i>', name: 'Linux' },
+  { icon: '<i class="fa-brands fa-aws"></i>', name: 'AWS' },
+  { icon: '<i class="fa-brands fa-docker"></i>', name: 'Docker' },
+  { icon: '<i class="fa-brands fa-git-alt"></i>', name: 'Git' },
+  { icon: '<i class="fa-solid fa-gears"></i>', name: 'CI/CD' },
+  { icon: '<i class="fa-solid fa-dharmachakra"></i>', name: 'K8s' },
 ];
 
 const listSkills = [
