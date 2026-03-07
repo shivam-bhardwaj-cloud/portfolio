@@ -26,21 +26,21 @@ const skillsData = [
 const journeyData = [
     {
         type: 'Work Experience',
-        year: '2024 – 2025',
+        year: '2025 – 2026',
         title: 'IT Infrastructure & Linux Support',
         company: 'NetCreativeMind',
         desc: 'Provided L1/L2 support for Linux & Windows environments. Managed physical server racking, cabling, and network troubleshooting. Gained deep hardware and OS knowledge.'
     },
     {
         type: 'Education',
-        year: '2024',
+        year: '2024 - 2025',
         title: 'Diploma in Cloud Computing',
         company: 'Jetking',
         desc: 'Mastered AWS, Linux administration, networking fundamentals, and virtualization. Built the practical foundation for modern Cloud Engineering.'
     },
     {
         type: 'Education',
-        year: '2023 – Present',
+        year: '2023 – 2026',
         title: 'BA Program (Computer Applications)',
         company: 'Delhi University',
         desc: 'Currently in my 5th Semester. Building strong academic fundamentals in computer systems and software concepts.'
