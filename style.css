@@ -39,7 +39,14 @@ nav { position: fixed; top: 0; width: 100%; background: rgba(5, 5, 5, 0.85); bac
 .nav-cta:hover { background: rgba(212, 175, 55, 0.1); }
 
 /* Hero Section */
-.hero { position: relative; padding: 10rem 0 6rem; min-height: 85vh; display: flex; align-items: center; }
+.hero { 
+    position: relative; 
+    padding: 10rem 0 6rem; 
+    min-height: 85vh; 
+    display: flex; 
+    align-items: center; 
+    overflow: hidden; /* Lighthouse Fix: Stops .hero-glow from causing layout shifts */
+}
 .hero-glow { position: absolute; top: 20%; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%); z-index: -1; pointer-events: none; }
 .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 4rem; width: 100%; }
 .hero-text { flex: 1.2; text-align: left; }
@@ -146,10 +153,8 @@ nav { position: fixed; top: 0; width: 100%; background: rgba(5, 5, 5, 0.85); bac
     /* Standard Card Padding */
     .card { padding: 1.2rem; }
     
-    /* FIX: Force Project Cards back to 0 padding so images hit the edges */
+    /* Force Project Cards back to 0 padding so images hit the edges */
     .project-card { padding: 0; }
-    
-    /* Adjust Image Height to keep a nice rectangle aspect ratio */
     .project-img { height: 180px; } 
     .project-content { padding: 1.2rem; }
     
