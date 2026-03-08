@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Shivam Bhardwaj | Cloud & DevOps Portfolio</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#050505">
-    <meta name="description" content="Portfolio of Shivam Bhardwaj - Cloud Engineer & Linux Administrator specializing in AWS, Docker, Kubernetes, and Automation.">
     <link rel="icon" type="image/webp" href="assets/images/about-profile.webp">
     <link rel="stylesheet" href="./style.css">
-    
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -22,99 +18,67 @@
                 <span class="logo-text">Shivam Bhardwaj</span>
             </a>
             <div class="nav-links">
-                <a href="#tech">Tech Stack</a>
-                <a href="#journey">Experience</a>
-                <a href="#portfolio">Projects</a>
-                <a href="#contact" class="nav-cta">Let's Talk</a>
+                <a href="#home" class="mobile-only-link"><i class="fa-solid fa-house mobile-icon"></i><span class="link-text">Home</span></a>
+                <a href="#tech"><i class="fa-solid fa-microchip mobile-icon"></i><span class="link-text">Skills</span></a>
+                <a href="#journey" class="desktop-only-link"><span class="link-text">Experience</span></a>
+                <a href="#portfolio"><i class="fa-solid fa-briefcase mobile-icon"></i><span class="link-text">Projects</span></a>
+                <a href="#contact" class="nav-cta"><i class="fa-solid fa-envelope mobile-icon"></i><span class="link-text desktop-text">Let's Talk</span><span class="link-text mobile-text">Contact</span></a>
             </div>
         </div>
     </nav>
 
-    <main>
+    <main id="main-view" class="fade-in">
         <section id="home" class="hero">
             <div class="hero-glow"></div>
             <div class="container hero-wrapper">
                 <div class="hero-text">
                     <h1 class="gold-text">Linux Administrator <br><span class="white-text">& Cloud Engineer</span></h1>
                     <p class="subtitle">Bridging the gap between IT Infrastructure and modern DevOps. Specializing in deploying reliable, automated systems.</p>
-                    
                     <div class="cta-buttons">
-                        <a href="assets/docs/resume/Shivam Bhardwaj Linux Admin.pdf" class="cta-primary" download>
-                            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-                        </a>
+                        <a href="assets/docs/resume/Shivam Bhardwaj Linux Admin.pdf" class="cta-primary" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
                         <a href="#portfolio" class="cta-secondary">View Projects</a>
                     </div>
                 </div>
-                
                 <div class="hero-image-container">
-                    <div class="image-border">
-                        <img src="assets/images/about-profile.webp" alt="Shivam Bhardwaj" class="profile-img" fetchpriority="high">
-                    </div>
+                    <div class="image-border"><img src="assets/images/about-profile.webp" alt="Shivam Bhardwaj" class="profile-img"></div>
                 </div>
             </div>
         </section>
 
-        <section id="tech" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Tech Stack & Core Skills</h2>
-                    <div class="gold-divider"></div>
-                </div>
-                <div class="skills-grid" id="skillsGrid">
-                    </div>
-            </div>
-        </section>
-
-        <section id="journey" class="section bg-darker">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Experience & Education</h2>
-                    <div class="gold-divider"></div>
-                </div>
-                <div class="journey-grid" id="journeyGrid">
-                    </div>
-            </div>
-        </section>
-
+        <section id="tech" class="section"><div class="container"><div class="section-header"><h2>Tech Stack & Core Skills</h2><div class="gold-divider"></div></div><div class="skills-grid" id="skillsGrid"></div></div></section>
+        <section id="journey" class="section bg-darker"><div class="container"><div class="section-header"><h2>Experience & Education</h2><div class="gold-divider"></div></div><div class="journey-grid" id="journeyGrid"></div></div></section>
+        
         <section id="portfolio" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2>Featured Projects</h2>
-                    <div class="gold-divider"></div>
-                </div>
-                <div class="projects-grid" id="projectsGrid">
-                    </div>
+                <div class="section-header"><h2>Featured Projects</h2><div class="gold-divider"></div></div>
+                <div class="projects-grid" id="projectsGrid"></div>
+                <div class="center-btn" style="margin-top: 3rem;"><button id="view-more-btn" class="cta-secondary" style="cursor: pointer; padding: 1rem 2.5rem; font-size: 1.1rem;"><i class="fa-solid fa-folder-open"></i> View All Projects</button></div>
             </div>
         </section>
 
         <section id="contact" class="section footer-section">
             <div class="container text-center">
                 <h2>Ready to Build?</h2>
-                <p class="subtitle">Open for roles in Cloud Engineering, DevOps, and Linux Administration.</p>
-                
                 <div class="contact-container">
-                    <a href="assets/docs/resume/Shivam Bhardwaj Linux Admin.pdf" class="cta-primary massive-btn" download>
-                        <i class="fa-solid fa-file-pdf"></i> Download Resume
-                    </a>
-                    
+                    <a href="assets/docs/resume/Shivam Bhardwaj Linux Admin.pdf" class="cta-primary massive-btn" download><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
                     <div class="contact-links-row">
-                        <a href="mailto:shivam.bhardwaj.cloud@gmail.com" class="contact-btn email-hover" data-email="shivam.bhardwaj.cloud@gmail.com">
-                            <i class="fa-solid fa-envelope"></i> Email
-                        </a>
-                        <a href="https://linkedin.com/in/shivam-bhardwaj-cloud" target="_blank" class="contact-btn">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://www.github.com/shivam-bhardwaj-cloud" target="_blank" class="contact-btn">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                        <a href="https://shivam-bhardwaj-cloud.github.io/links/" target="_blank" class="contact-btn">
-                            <i class="fa-solid fa-link"></i> LinkHub
-                        </a>
+                        <a href="mailto:shivam.bhardwaj.cloud@gmail.com" class="contact-btn email-hover" data-email="shivam.bhardwaj.cloud@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a href="https://linkedin.com/in/shivam-bhardwaj-cloud" target="_blank" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.github.com/shivam-bhardwaj-cloud" target="_blank" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://shivam-bhardwaj-cloud.github.io/links/" target="_blank" class="contact-btn"><i class="fa-solid fa-link"></i> LinkHub</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <div id="all-projects-view" class="hidden fade-in section">
+        <div class="container">
+            <button id="back-btn" class="cta-secondary" style="margin-bottom: 2rem; cursor: pointer;"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
+            <div class="section-header"><h2>The Project Vault</h2><p class="subtitle" style="margin-bottom: 1rem;">My complete evolutionary journey.</p><div class="gold-divider"></div></div>
+            <div class="projects-grid" id="allProjectsGrid"></div>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>
