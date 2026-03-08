@@ -15,13 +15,7 @@ const journeyData = [
 
 // 3. Projects Data
 const projectsData = [
-    {
-        title: 'Cloud-Native Employee Portal',
-        description: 'Migrated a local Flask monolith to an evolutionary stateless cloud architecture. Implemented AWS S3 for object storage and RDS for relational data.',
-        imageUrl: 'assets/images/online_shop.webp',
-        tags: ['AWS S3', 'RDS', 'Docker', 'Python'],
-        link: 'https://github.com/shivam-bhardwaj-cloud/employee-portal'
-    },
+    
     {
         title: 'High-Availability Microservices',
         description: 'Designed a fault-tolerant infrastructure on Kubernetes (KIND). Implemented Nginx Ingress for traffic routing and HPA to handle spikes.',
@@ -43,13 +37,6 @@ const projectsData = [
         tags: ['AWS S3', 'IAM Policies', 'Security'],
         link: 'https://github.com/shivam-bhardwaj-cloud/aws-s3-static-website'
     },
-    {
-        title: 'Automated Azure Infrastructure',
-        description: 'Provisioned production-ready cloud infrastructure using Terraform. Hosted a stateless application on Azure Container Apps with automated CPU scaling.',
-        imageUrl: 'assets/images/aws-s3-static-website.webp',
-        tags: ['Terraform', 'Azure Container Apps', 'FinOps'],
-        link: '#'
-    }
 ];
 
 // Render Functions
