@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Google tag (gtag.js) -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KBVFSRTJ2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6KBVFSRTJ2');
+    </script>
+    
     <meta charset="UTF-8">
     <title>Shivam Bhardwaj | Cloud & DevOps Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -62,10 +74,10 @@
                 <div class="contact-container">
                     <a href="assets/docs/resume/Shivam Bhardwaj Linux Admin.pdf" class="cta-primary massive-btn" download><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
                     <div class="contact-links-row">
-                        <a href="mailto:shivam.bhardwaj.cloud@gmail.com" class="contact-btn email-hover" data-email="shivam.bhardwaj.cloud@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-                        <a href="https://linkedin.com/in/shivam-bhardwaj-cloud" target="_blank" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://www.github.com/shivam-bhardwaj-cloud" target="_blank" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://shivam-bhardwaj-cloud.github.io/links/" target="_blank" class="contact-btn"><i class="fa-solid fa-link"></i> LinkHub</a>
+                        <a href="mailto:shivam.bhardwaj.cloud@gmail.com" class="contact-btn email-hover" data-email="shivam.bhardwaj.cloud@gmail.com" onclick="gtag('event', 'click_email');"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a href="https://linkedin.com/in/shivam-bhardwaj-cloud" target="_blank" class="contact-btn" onclick="gtag('event', 'click_linkedin');"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.github.com/shivam-bhardwaj-cloud" target="_blank" class="contact-btn" onclick="gtag('event', 'click_github');"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://shivam-bhardwaj-cloud.github.io/links/" target="_blank" class="contact-btn" onclick="gtag('event', 'click_linkhub');"><i class="fa-solid fa-link"></i> LinkHub</a>
                     </div>
                 </div>
             </div>
