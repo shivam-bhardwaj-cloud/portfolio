@@ -260,3 +260,28 @@ body { background-color: var(--bg-main); color: var(--text-main); line-height: 1
     .desktop-text { display: none; }
     .mobile-text { display: block; }
 }
+
+/* Dynamic Company Logo Styling */
+.journey-company-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.2rem;
+}
+
+.company-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #ffffff; /* White background so all logos pop */
+    padding: 4px;
+    object-fit: contain;
+    border: 1px solid var(--gold);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+}
+/* Fix for Logo & Text Alignment */
+.journey-company-wrapper .journey-company {
+    margin-bottom: 0 !important; /* Purane dhakke (margin) ko khatam kiya */
+    line-height: 1 !important;   /* Text ki height ko balance kiya */
+    display: inline-block !important; 
+}

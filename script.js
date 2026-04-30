@@ -1,19 +1,72 @@
 // 1. Tech Stack Data
+
 const skillsData = [
-    { icon: '<i class="fa-brands fa-linux"></i>', title: 'Linux Administration', desc: 'Proficient in RHEL/Ubuntu, user permission management, secure networking, and automating tasks via Shell Scripting.' },
-    { icon: '<i class="fa-brands fa-aws"></i>', title: 'AWS Cloud', desc: 'Deploying highly available architecture using EC2, S3, IAM, and VPCs. Focused on security and cost-optimization.' },
-    { icon: '<i class="fa-solid fa-gears"></i>', title: 'DevOps & CI/CD', desc: 'Version control with Git/GitHub, configuring CI/CD pipelines, and streamlining code deployment processes.' },
-    { icon: '<i class="fa-brands fa-docker"></i>', title: 'Containers & Orchestration', desc: 'Writing Dockerfiles, managing multi-container apps with Docker Compose, and foundational Kubernetes deployments.' }
+    { 
+        icon: '<i class="fa-brands fa-linux"></i>', 
+        title: 'Linux Administration',
+        desc: 'Proficient in RHEL/Ubuntu, user permission management, secure networking, and automating tasks via Shell Scripting.' 
+    },
+    { 
+        icon: '<i class="fa-brands fa-aws"></i>', 
+        title: 'AWS Cloud',
+        desc: 'Deploying highly available architecture using EC2, S3, IAM, and VPCs. Focused on security and cost-optimization.' 
+    },
+    { 
+        icon: '<i class="fa-solid fa-gears"></i>', 
+        title: 'DevOps & CI/CD',
+        desc: 'Version control with Git/GitHub, configuring CI/CD pipelines, and streamlining code deployment processes.' 
+    },
+    { 
+        icon: '<i class="fa-brands fa-docker"></i>', 
+        title: 'Containers & Orchestration',
+        desc: 'Writing Dockerfiles, managing multi-container apps with Docker Compose, and foundational Kubernetes deployments.' 
+    }
 ];
 
-// 2. Journey Data
-const journeyData = [
-    { type: 'Work Experience', year: '2025 – 2026', title: 'IT Infrastructure & Linux Support', company: 'NetCreativeMind', desc: 'Provided L1/L2 support for Linux & Windows environments. Managed physical server racking, cabling, and network troubleshooting.' },
-    { type: 'Education', year: '2024 - 2025', title: 'Diploma in Cloud Computing', company: 'Jetking', desc: 'Mastered AWS, Linux administration, networking fundamentals, and virtualization. Built the practical foundation for Cloud Engineering.' },
-    { type: 'Education', year: '2023 – 2026', title: 'BA Program (Computer Applications)', company: 'Delhi University', desc: 'Currently in my 5th Semester. Building strong academic fundamentals in computer systems and software concepts.' }
+// 2. Professional Experience Data
+
+const experienceData = [
+    { 
+        year: 'Mar 2026 – Present', 
+        title: 'IT Support Executive (Infrastructure & Automation)', 
+        company: 'Altezzasys INC',
+        icon: '<i class="fa-solid fa-network-wired"></i>',
+        domain: 'https://www.altezzasys.com',
+        desc: 'Managing end-to-end IT infrastructure for a CMMI Level 5 organization (600+ users), ensuring 100% system uptime.<br><br>● <b>Process Automation:</b> Leveraged PowerShell & Power Automate to automate user lifecycle and software provisioning, reducing manual effort by 40%.<br><br>● <b>Infrastructure Ownership:</b> Single-handedly managed hardware deployment, network troubleshooting, and software compliance.<br><br>● <b>Asset Management:</b> Streamlined IT asset tracking and inventory to plug billing leaks.<br><br>● <b>User Success:</b> Delivered high-speed tech support, maintaining a strict 20-minute SLA for complex bottlenecks.' 
+    },
+    { 
+        year: 'Apr 2025 – Dec 2025', 
+        title: 'IT Support Intern (Infrastructure & Systems)', 
+        company: 'NetCreativeMind Solutions', 
+        icon: '<i class="fa-solid fa-server"></i>', 
+        domain: 'https://www.netcreativemind.com',
+        desc: 'Assisted in managing a hybrid infrastructure environment (Linux & Windows), focusing on server health and secure identity management.<br><br>● <b>Server Admin:</b> Monitored 8+ on-prem servers; performed proactive log analysis (Journalctl) to maintain 99.9% uptime.<br><br>● <b>IAM & Security:</b> Managed lifecycles and NTFS permissions via Active Directory (ADDS) for secure RDP/SSH access.<br><br>● <b>Network Troubleshooting:</b> Resolved critical DNS failures, IP conflicts, and VPN connectivity issues.<br><br>● <b>Deployment:</b> Automated OS provisioning and software rollouts for 50+ workstations across multiple regional offices.' 
+    }
+];
+
+// 3. Education Data
+
+const educationData = [
+    { 
+        year: '2024 - 2025',
+        title: 'Diploma in Cloud Computing (Grade: A)',
+        company: 'Jetking',
+        icon: '<i class="fa-solid fa-cloud"></i>',
+        domain: 'https://www.jetking.com',
+        desc: '● Completed an intensive 576-hour hands-on program focused on modern IT infrastructure.<br><br>● Mastered AWS Cloud services including EC2, VPC, S3, and IAM for secure cloud deployments.<br><br>● Gained proficiency in Windows Server Administration, Linux fundamentals, and Networking (TCP/IP, DNS, Routing).<br><br>● Developed strong troubleshooting skills through lab-based real-world IT simulations.'
+    },
+    { 
+        year: '2023 - 2026',
+        title: 'B.A. Program with Computer Applications',
+        company: 'Delhi University',
+        icon: '<i class="fa-solid fa-graduation-cap"></i>',
+        domain: 'https://www.du.ac.in',
+        desc: '● Focusing on computer applications, software concepts, and IT fundamentals.<br><br>● Building a strong theoretical foundation in information sciences to complement hands-on DevOps and Cloud training.' 
+    }
 ];
 
 // 3. Projects Data
+
 const projectsData = [
     
     {
@@ -49,13 +102,40 @@ function renderData() {
         `).join('');
     }
 
-    // Render Journey
-    const journeyGrid = document.getElementById('journeyGrid');
-    if (journeyGrid) {
-        journeyGrid.innerHTML = journeyData.map(j => `
+   // Render Professional Experience
+    const experienceGrid = document.getElementById('experienceGrid');
+    if (experienceGrid) {
+        experienceGrid.innerHTML = experienceData.map(e => `
             <div class="card fade-in">
-                <div class="journey-header"><h3>${j.title}</h3><span class="journey-year">${j.year}</span></div>
-                <span class="journey-company">${j.company} | ${j.type}</span><p>${j.desc}</p>
+                <div class="journey-header"><h3>${e.title}</h3><span class="journey-year">${e.year}</span></div>
+                <div class="journey-company-wrapper">
+                    <!-- Google API with UI-Avatars Golden Fallback -->
+                    <img src="https://www.google.com/s2/favicons?domain=${e.domain}&sz=128" 
+                         alt="${e.company} Logo" 
+                         class="company-logo" 
+                         onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(e.company)}&background=D4AF37&color=000&bold=true'">
+                    <span class="journey-company" style="color: var(--gold); font-weight: 600; font-size: 0.95rem; display: block;">${e.company}</span>
+                </div>
+                <p>${e.desc}</p>
+            </div>
+        `).join('');
+    }
+
+    // Render Education
+    const educationGrid = document.getElementById('educationGrid');
+    if (educationGrid) {
+        educationGrid.innerHTML = educationData.map(e => `
+            <div class="card fade-in">
+                <div class="journey-header"><h3>${e.title}</h3><span class="journey-year">${e.year}</span></div>
+                <div class="journey-company-wrapper">
+                    <!-- Google API with UI-Avatars Golden Fallback -->
+                    <img src="https://www.google.com/s2/favicons?domain=${e.domain}&sz=128" 
+                         alt="${e.company} Logo" 
+                         class="company-logo" 
+                         onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(e.company)}&background=D4AF37&color=000&bold=true'">
+                    <span class="journey-company" style="color: var(--gold); font-weight: 600; font-size: 0.95rem; display: block;">${e.company}</span>
+                </div>
+                <p>${e.desc}</p>
             </div>
         `).join('');
     }

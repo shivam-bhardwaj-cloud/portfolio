@@ -58,17 +58,57 @@
             </div>
         </section>
 
-        <section id="tech" class="section"><div class="container"><div class="section-header"><h2>Tech Stack & Core Skills</h2><div class="gold-divider"></div></div><div class="skills-grid" id="skillsGrid"></div></div></section>
-        <section id="journey" class="section bg-darker"><div class="container"><div class="section-header"><h2>Experience & Education</h2><div class="gold-divider"></div></div><div class="journey-grid" id="journeyGrid"></div></div></section>
-        
-        <section id="portfolio" class="section">
+        <!-- Tech Stack Section -->
+
+        <section id="tech" class="section">
             <div class="container">
-                <div class="section-header"><h2>Featured Projects</h2><div class="gold-divider"></div></div>
-                <div class="projects-grid" id="projectsGrid"></div>
-                <div class="center-btn" style="margin-top: 3rem;"><button id="view-more-btn" class="cta-secondary" style="cursor: pointer; padding: 1rem 2.5rem; font-size: 1.1rem;"><i class="fa-solid fa-folder-open"></i> View All Projects</button></div>
+                <div class="section-header"><h2>Tech Stack & Core Skills</h2>
+                    <div class="gold-divider">                 
+                    </div>
+                </div>
+                <div class="skills-grid" id="skillsGrid">
+                </div>
             </div>
         </section>
 
+        <!-- Experiece and Education -->
+
+        <section id="journey" class="section bg-darker">
+            <div class="container">
+                
+                <!-- Professional Experience Section (Impact First) -->
+                <div class="section-header">
+                    <h2>Professional Experience</h2>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="journey-grid" id="experienceGrid" style="margin-bottom: 5rem;"></div>
+
+                <!-- Education Section (Below Experience) -->
+                <div class="section-header">
+                    <h2>Education & Certifications</h2>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="journey-grid" id="educationGrid"></div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="projects-grid" id="projectsGrid"></div>
+                <div class="center-btn" style="margin-top: 3rem;">
+                    <button id="view-more-btn" class="cta-secondary" style="cursor: pointer; padding: 1rem 2.5rem; font-size: 1.1rem;"><i class="fa-solid fa-folder-open"></i> View All Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+         
         <section id="contact" class="section footer-section">
             <div class="container text-center">
                 <h2>Ready to Build?</h2>
@@ -85,10 +125,18 @@
         </section>
     </main>
 
+    <!-- All Projects View -->
+
     <div id="all-projects-view" class="hidden fade-in section">
         <div class="container">
-            <button id="back-btn" class="cta-secondary" style="margin-bottom: 2rem; cursor: pointer;"><i class="fa-solid fa-arrow-left"></i> Back to Home</button>
-            <div class="section-header"><h2>The Project Vault</h2><p class="subtitle" style="margin-bottom: 1rem;">My complete evolutionary journey.</p><div class="gold-divider"></div></div>
+            <button id="back-btn" class="cta-secondary" style="margin-bottom: 2rem; cursor: pointer;">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </button>
+            <div class="section-header">
+                <h2>The Project Vault</h2>
+                <p class="subtitle" style="margin-bottom: 1rem;">My complete evolutionary journey.</p>
+                <div class="gold-divider"></div>
+            </div>
             <div class="projects-grid" id="allProjectsGrid"></div>
         </div>
     </div>
