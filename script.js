@@ -32,7 +32,7 @@ const experienceData = [
         company: 'Altezzasys INC',
         icon: '<i class="fa-solid fa-network-wired"></i>',
         domain: 'https://www.altezzasys.com',
-        desc: 'Managing end-to-end IT infrastructure for a CMMI Level 5 organization (600+ users), ensuring 100% system uptime.<br><br>● <b>Process Automation:</b> Leveraged PowerShell & Power Automate to automate user lifecycle and software provisioning, reducing manual effort by 40%.<br><br>● <b>Infrastructure Ownership:</b> Single-handedly managed hardware deployment, network troubleshooting, and software compliance.<br><br>● <b>Asset Management:</b> Streamlined IT asset tracking and inventory to plug billing leaks.<br><br>● <b>User Success:</b> Delivered high-speed tech support, maintaining a strict 20-minute SLA for complex bottlenecks.' 
+        desc: '● <b>System Integration:</b> Architected and deployed a localized MS-SQL server (via RDP) to bridge on-premise biometric hardware with the Keka HRMS SaaS platform.<br><br>● <b>Infrastructure Monitoring:</b> Developed custom PowerShell scripts to automate the auditing of 200+ enterprise endpoints, routing data via Discord Webhooks.<br><br>● <b>Cloud & FinOps:</b> Executed cloud cost-optimization by containerizing web portfolios and migrating static assets to GitHub Pages.<br><br>● <b>Workflow Optimization:</b> Engineered automated data-reconciliation pipelines (XLOOKUP), compressing critical master datasets from 32MB to 152KB.'
     },
     { 
         year: 'Apr 2025 – Dec 2025', 
@@ -68,7 +68,14 @@ const educationData = [
 // 3. Projects Data
 
 const projectsData = [
-    
+
+    {
+        title: 'Employee Document Portal Migration',
+        description: 'Architected a 4-phase evolutionary migration of a legacy app to a cloud-native architecture. Transitioned from local SQLite to AWS RDS (PostgreSQL) and replaced persistent volumes with AWS S3.',
+        imageUrl: 'assets/images/employee-portal.webp',
+        tags: ['S3','RDS', 'Docker', 'IAM','Python','Kubernetes','AWS' ,'Cloud' ,'CICD'],
+        link: 'https://github.com/shivam-bhardwaj-cloud/employee-portal'
+    },
     {
         title: 'High-Availability Microservices',
         description: 'Designed a fault-tolerant infrastructure on Kubernetes (KIND). Implemented Nginx Ingress for traffic routing and HPA to handle spikes.',
