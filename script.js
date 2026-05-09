@@ -32,7 +32,7 @@ const experienceData = [
         company: 'Altezzasys INC',
         icon: '<i class="fa-solid fa-network-wired"></i>',
         domain: 'https://www.altezzasys.com',
-        desc: '● <b>System Integration:</b> Architected and deployed a localized MS-SQL server (via RDP) to bridge on-premise biometric hardware with the Keka HRMS SaaS platform.<br><br>● <b>Infrastructure Monitoring:</b> Developed custom PowerShell scripts to automate the auditing of 200+ enterprise endpoints, routing data via Discord Webhooks.<br><br>● <b>Cloud & FinOps:</b> Executed cloud cost-optimization by containerizing web portfolios and migrating static assets to GitHub Pages.<br><br>● <b>Workflow Optimization:</b> Engineered automated data-reconciliation pipelines (XLOOKUP), compressing critical master datasets from 32MB to 152KB.'
+        desc: '● <b>System Integration:</b> Architected and deployed a localized MS-SQL server (via RDP) to bridge on-premise biometric hardware with the Keka HRMS SaaS platform.<br><br>● <b>Infrastructure Monitoring:</b> Developed custom PowerShell scripts to automate the auditing of 600+ enterprise endpoints, routing data via Discord Webhooks.<br><br>● <b>Cloud & FinOps:</b> Executed cloud cost-optimization by containerizing web portfolios and migrating static assets to GitHub Pages.<br><br>● <b>Workflow Optimization:</b> Engineered automated data-reconciliation pipelines (XLOOKUP), compressing critical master datasets from 32MB to 152KB.'
     },
     { 
         year: 'Apr 2025 – Dec 2025', 
