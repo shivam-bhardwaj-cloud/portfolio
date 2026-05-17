@@ -28,7 +28,7 @@ const EXP=[
     year:'Mar 2026 – Present',
     title:'IT Support Executive — Infrastructure & Automation',
     company:'Altezzasys INC',
-    domain:'altezzasys.com',
+    domain:'www.altezzasys.com',
     bullets:[
       '<b>System Integration:</b> Deployed MS-SQL server via RDP bridging biometric hardware with Keka HRMS SaaS.',
       '<b>Monitoring Automation:</b> PowerShell scripts auditing 600+ enterprise endpoints, routed via Discord Webhooks.',
@@ -40,7 +40,7 @@ const EXP=[
     year:'Apr 2025 – Dec 2025',
     title:'IT Support Intern — Infrastructure & Systems',
     company:'NetCreativeMind Solutions',
-    domain:'netcreativemind.com',
+    domain:'www.netcreativemind.com',
     bullets:[
       '<b>Server Admin:</b> Managed 8+ on-prem servers with Journalctl log analysis, maintaining <b>99.9% uptime</b>.',
       '<b>IAM & Security:</b> Active Directory lifecycles & NTFS permissions for RDP/SSH access control.',
@@ -52,7 +52,7 @@ const EXP=[
     year:'2024 – 2025',
     title:'Diploma in Cloud Computing — Grade A',
     company:'Jetking',
-    domain:'jetking.com',
+    domain:'www.jetking.com',
     edu:true,
     bullets:[
       'Intensive 576-hour hands-on program on modern IT infrastructure & cloud systems.',
@@ -63,7 +63,7 @@ const EXP=[
     year:'2023 – 2026',
     title:'B.A. with Computer Applications',
     company:'Delhi University',
-    domain:'du.ac.in',
+    domain:'www.du.ac.in',
     edu:true,
     bullets:[
       'Computer applications, software concepts, and information sciences.',
