@@ -1,146 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QR9FS1LR3X"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-QR9FS1LR3X');
-        </script>
-    
-    <meta charset="UTF-8">
-    <title>Shivam Bhardwaj | Cloud & DevOps Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#050505">
-    <link rel="icon" type="image/webp" href="assets/images/about-profile.webp">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Shivam Bhardwaj — Cloud & DevOps Engineer. AWS · Kubernetes · Docker · CI/CD · Infrastructure at scale.">
+<title>Shivam Bhardwaj — Cloud & DevOps Engineer</title>
+<link rel="icon" type="image/webp" href="assets/images/about-profile.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <span class="logo-icon"><i class="fa-solid fa-cloud"></i></span>
-                <span class="logo-text">Shivam Bhardwaj</span>
-            </a>
-            <div class="nav-links">
-                <a href="#home" class="mobile-only-link"><i class="fa-solid fa-house mobile-icon"></i><span class="link-text">Home</span></a>
-                <a href="#tech"><i class="fa-solid fa-microchip mobile-icon"></i><span class="link-text">Skills</span></a>
-                <a href="#journey" class="desktop-only-link"><span class="link-text">Experience</span></a>
-                <a href="#portfolio"><i class="fa-solid fa-briefcase mobile-icon"></i><span class="link-text">Projects</span></a>
-                <a href="#contact" class="nav-cta"><i class="fa-solid fa-envelope mobile-icon"></i><span class="link-text desktop-text">Let's Talk</span><span class="link-text mobile-text">Contact</span></a>
-            </div>
-        </div>
-    </nav>
+<div id="cur"></div>
+<div id="cur-dot"></div>
 
-    <main id="main-view" class="fade-in">
-        <section id="home" class="hero">
-            <div class="hero-glow"></div>
-            <div class="container hero-wrapper">
-                <div class="hero-text">
-                    <h1 class="gold-text">Cloud & DevOps <br><span class="white-text">Engineer</span></h1>
-                    <p class="subtitle">Bridging the gap between IT Infrastructure and modern DevOps. Specializing in deploying reliable, automated systems.</p>
-                    <div class="cta-buttons">
-                        <a href="assets/docs/resume/Shivam_Bhardwaj_DevOps_Engineer.pdf" class="cta-primary" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
-                        <a href="#portfolio" class="cta-secondary">View Projects</a>
-                    </div>
-                </div>
-                <div class="hero-image-container">
-                    <div class="image-border"><img src="assets/images/about-profile.webp" alt="Shivam Bhardwaj" class="profile-img"></div>
-                </div>
-            </div>
-        </section>
+<div id="loader">
+  <div class="ld-logo">System boot</div>
+  <div class="ld-name" id="ldName"></div>
+  <div class="ld-role">Cloud &amp; DevOps Engineer</div>
+  <div class="ld-bar-wrap"><div class="ld-bar" id="ldBar"></div></div>
+  <div class="ld-pct" id="ldPct">0%</div>
+</div>
 
-        <!-- Tech Stack Section -->
-
-        <section id="tech" class="section">
-            <div class="container">
-                <div class="section-header"><h2>Tech Stack & Core Skills</h2>
-                    <div class="gold-divider">                 
-                    </div>
-                </div>
-                <div class="skills-grid" id="skillsGrid">
-                </div>
-            </div>
-        </section>
-
-        <!-- Experiece and Education -->
-
-        <section id="journey" class="section bg-darker">
-            <div class="container">
-                
-                <!-- Professional Experience Section (Impact First) -->
-                <div class="section-header">
-                    <h2>Professional Experience</h2>
-                    <div class="gold-divider"></div>
-                </div>
-                <div class="journey-grid" id="experienceGrid" style="margin-bottom: 5rem;"></div>
-
-                <!-- Education Section (Below Experience) -->
-                <div class="section-header">
-                    <h2>Education & Certifications</h2>
-                    <div class="gold-divider"></div>
-                </div>
-                <div class="journey-grid" id="educationGrid"></div>
-            </div>
-        </section>
-        
-        <!-- Portfolio Section -->
-
-        <section id="portfolio" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Featured Projects</h2>
-                    <div class="gold-divider"></div>
-                </div>
-                <div class="projects-grid" id="projectsGrid"></div>
-                <div class="center-btn" style="margin-top: 3rem;">
-                    <button id="view-more-btn" class="cta-secondary" style="cursor: pointer; padding: 1rem 2.5rem; font-size: 1.1rem;"><i class="fa-solid fa-folder-open"></i> View All Projects</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-         
-        <section id="contact" class="section footer-section">
-            <div class="container text-center">
-                <h2>Ready to Build?</h2>
-                <div class="contact-container">
-                    <a href="assets/docs/resume/Shivam_Bhardwaj_DevOps_Engineer.pdf" class="cta-primary massive-btn" download><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
-                    <div class="contact-links-row">
-                        <a href="mailto:shivam.bhardwaj.cloud@gmail.com" class="contact-btn email-hover" data-email="shivam.bhardwaj.cloud@gmail.com" onclick="gtag('event', 'click_email');"><i class="fa-solid fa-envelope"></i> Email</a>
-                        <a href="https://linkedin.com/in/shivam-bhardwaj-cloud" target="_blank" class="contact-btn" onclick="gtag('event', 'click_linkedin');"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://www.github.com/shivam-bhardwaj-cloud" target="_blank" class="contact-btn" onclick="gtag('event', 'click_github');"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://shivam-bhardwaj-cloud.github.io/links/" target="_blank" class="contact-btn" onclick="gtag('event', 'click_linkhub');"><i class="fa-solid fa-link"></i> LinkHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- All Projects View -->
-
-    <div id="all-projects-view" class="hidden fade-in section">
-        <div class="container">
-            <button id="back-btn" class="cta-secondary" style="margin-bottom: 2rem; cursor: pointer;">
-                <i class="fa-solid fa-arrow-left"></i> Back to Home
-            </button>
-            <div class="section-header">
-                <h2>The Project Vault</h2>
-                <p class="subtitle" style="margin-bottom: 1rem;">My complete evolutionary journey.</p>
-                <div class="gold-divider"></div>
-            </div>
-            <div class="projects-grid" id="allProjectsGrid"></div>
-        </div>
+<div id="cmd-overlay" role="dialog" aria-label="Command palette" aria-modal="true">
+  <div class="cmd-box">
+    <div class="cmd-top">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="cmd-input" placeholder="Search anything..." autocomplete="off" spellcheck="false">
+      <span class="cmd-kbd">ESC</span>
     </div>
+    <div class="cmd-results" id="cmdResults"></div>
+    <div class="cmd-hint">
+      <span><kbd class="cmd-kbd">↑↓</kbd> Navigate</span>
+      <span><kbd class="cmd-kbd">↵</kbd> Select</span>
+      <span><kbd class="cmd-kbd">ESC</kbd> Close</span>
+    </div>
+  </div>
+</div>
 
-    <script src="./script.js"></script>
+<nav id="nav" role="navigation" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand" aria-label="Home">
+      <div class="nav-brand-mark">SB</div>
+      <span>Shivam Bhardwaj</span>
+    </a>
+    <ul class="nav-links" role="list" id="navLinks">
+      <li><a href="#home"     class="nl m-show act" data-section="home"><i class="fa-solid fa-house" aria-hidden="true"></i><span class="nl-label">Home</span></a></li>
+      <li><a href="#skills"   class="nl m-show" data-section="skills"><i class="fa-solid fa-microchip" aria-hidden="true"></i><span class="nl-label">Skills</span></a></li>
+      <li><a href="#work"     class="nl" data-section="work"><span class="nl-label">Work</span></a></li>
+      <li><a href="#projects" class="nl m-show" data-section="projects"><i class="fa-solid fa-code-branch" aria-hidden="true"></i><span class="nl-label">Projects</span></a></li>
+      <li><a href="#contact"  class="nl m-show" data-section="contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i><span class="nl-label">Contact</span></a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="cmd-trigger" id="cmdBtn" aria-label="Open command palette">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <span>Quick search</span>
+        <span class="cmd-kbd">⌘K</span>
+      </button>
+      <a href="assets/docs/resume/Shivam_Bhardwaj_DevOps_Engineer.pdf" class="btn-nav" download>
+        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Resume
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-view" class="page">
+
+  <section id="home" aria-label="Introduction">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-mesh" aria-hidden="true">
+      <div class="hb hb1"></div><div class="hb hb2"></div><div class="hb hb3"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="hero-badge">
+          <span class="h-pip"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <h1 class="hero-h1">
+          <em class="h1-serif">Cloud &amp; DevOps</em>
+          <strong class="h1-main">Engineer</strong>
+          <span class="h1-outline">at Scale.</span>
+        </h1>
+        <p class="hero-desc">Infrastructure that never blinks. Pipelines that ship without friction. Systems built to handle whatever comes next — reliably, automatically, at any scale.</p>
+        <div class="hero-actions">
+          <a href="assets/docs/resume/Shivam_Bhardwaj_DevOps_Engineer.pdf" class="btn-primary" download>
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn-outline">
+            View My Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="hero-metrics">
+          <div class="hm-item">
+            <span class="hm-val"><span class="counter" data-target="2">0</span><span>+</span></span>
+            <span class="hm-label">Yrs Exp</span>
+          </div>
+          <div class="hm-sep" aria-hidden="true"></div>
+          <div class="hm-item">
+            <span class="hm-val"><span class="counter" data-target="600">0</span><span>+</span></span>
+            <span class="hm-label">Endpoints</span>
+          </div>
+          <div class="hm-sep" aria-hidden="true"></div>
+          <div class="hm-item">
+            <span class="hm-val"><span class="counter" data-target="10">0</span><span>+</span></span>
+            <span class="hm-label">Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-vis">
+        <div class="vis-rings" aria-hidden="true">
+          <div class="vring vring1"></div>
+          <div class="vring vring2"></div>
+          <div class="vring vring3"></div>
+        </div>
+        <div class="vis-photo-shell">
+          <div class="vis-photo-inner">
+            <img src="assets/images/about-profile.webp" alt="Shivam Bhardwaj" class="vis-photo">
+          </div>
+        </div>
+        <div class="f-chip fc1" aria-hidden="true"><i class="fa-brands fa-aws"></i><span>AWS Cloud</span></div>
+        <div class="f-chip fc2" aria-hidden="true"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+        <div class="f-chip fc3" aria-hidden="true"><i class="fa-solid fa-dharmachakra"></i><span>Kubernetes</span></div>
+        <div class="f-chip fc4" aria-hidden="true"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+        <div class="f-chip fc5" aria-hidden="true"><i class="fa-solid fa-infinity"></i><span>CI/CD</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hs-mouse"></div>
+      <span class="hs-label">Scroll</span>
+    </div>
+  </section>
+
+  <section id="skills" class="sec-alt" aria-labelledby="skills-h">
+    <div class="wrap">
+      <div class="sec-eyebrow rv">01 — Core Competencies</div>
+      <h2 id="skills-h" class="sec-h rv" style="--d:.1s">Tech Stack &amp; <em>Skills</em></h2>
+      <p class="sec-sub rv" style="--d:.2s">The tools I use daily to build, automate, and operate production-grade cloud infrastructure.</p>
+      <div class="bento rv-scale" style="--d:.25s" id="skillsGrid" role="list"></div>
+      <div class="tools-row rv" style="--d:.35s" id="toolsRow"></div>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-eyebrow rv">02 — Career Timeline</div>
+      <h2 id="work-h" class="sec-h rv" style="--d:.1s">Experience &amp; <em>Education</em></h2>
+      <p class="sec-sub rv" style="--d:.2s">The milestones that shaped how I think about infrastructure and automation.</p>
+      <div class="work-grid" id="workGrid" role="list"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="sec-alt" aria-labelledby="proj-h">
+    <div class="wrap">
+      <div class="sec-eyebrow rv">03 — Selected Work</div>
+      <h2 id="proj-h" class="sec-h rv" style="--d:.1s">Featured <em>Projects</em></h2>
+      <p class="sec-sub rv" style="--d:.2s">Real-world infrastructure and DevOps solutions deployed to solve actual engineering challenges.</p>
+      <div class="proj-grid" id="projGrid" role="list"></div>
+      <div class="vault-row rv" style="--d:.3s">
+        <button class="btn-ghost" id="vaultBtn">
+          <i class="fa-solid fa-vault" aria-hidden="true"></i> Full Project Archive
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="terminal" aria-label="Terminal demo" style="padding:4rem 0 8rem;">
+    <div class="wrap">
+      <div class="sec-eyebrow rv" style="justify-content:center;display:inline-flex;margin:0 auto 1.5rem;display:flex;">04 — Under the Hood</div>
+      <h2 class="sec-h rv" style="--d:.1s;text-align:center;">How I think in <em>systems</em></h2>
+      <p class="sec-sub rv" style="--d:.2s;margin:0 auto 3rem;text-align:center;">A live look at the mindset behind every deployment decision.</p>
+      <div class="terminal-wrap rv-scale" style="--d:.25s">
+        <div class="term-bar">
+          <div class="term-dot td-r"></div>
+          <div class="term-dot td-y"></div>
+          <div class="term-dot td-g"></div>
+          <span class="term-title">shivam@devops-cloud ~ zsh</span>
+        </div>
+        <div class="term-body" id="termBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="contact-wrap">
+        <div class="contact-card rv-scale" style="--d:.1s">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div class="sec-eyebrow" style="justify-content:center;margin-bottom:1.5rem;">05 — Let's Build Together</div>
+          <h2 id="contact-h" class="contact-big">
+            Ready to deploy<br><span>something great?</span>
+          </h2>
+          <p class="contact-sub">Open to Cloud Engineering, DevOps &amp; Infrastructure roles.<br>Let's talk about what we can build together.</p>
+          <a href="assets/docs/resume/Shivam_Bhardwaj_DevOps_Engineer.pdf" class="btn-primary" style="margin:0 auto" download>
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download Full Resume
+          </a>
+          <div class="contact-links" id="contactLinks" role="list"></div>
+          <p class="contact-foot">Crafted with precision · No frameworks · Pure performance · © 2025 Shivam Bhardwaj</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="vault-view" class="hidden" role="region" aria-label="All projects">
+  <div class="wrap">
+    <button class="back-pill" id="vaultBack">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Portfolio
+    </button>
+    <div class="sec-eyebrow">Project Vault</div>
+    <h2 class="sec-h" style="margin-bottom:.5rem">Complete Archive</h2>
+    <p class="sec-sub" style="margin-bottom:3rem">Every project, every experiment, every shipped solution.</p>
+    <div class="proj-grid" id="allProjGrid" role="list"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
