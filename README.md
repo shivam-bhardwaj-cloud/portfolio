@@ -61,7 +61,7 @@ Add a new object to the `EXP` array:
   year: '2026 – Present',
   title: 'Infrastructure & Systems Automation Engineer',
   company: 'Altezzasys INC',
-  domain: '[www.altezzasys.com](https://www.altezzasys.com)', // For Using Company Favicon
+  domain: 'www.altezzasys.com', // For Using Company Favicon
   bullets: [
     '<b>Integration Engineering:</b> Architecting automated real-time hardware-to-cloud sync structures.',
     '<b>System Telemetry:</b> Deploying custom scripts to audit distributed network endpoints.'
