@@ -46,34 +46,39 @@ portfolio/
 ### 1. Add a New Tech Skill
 Add a new object to the `SKIILS` array:
 ```javascript
-{ 
-    icon: '<i class="fa-solid fa-server"></i>', // Use any FontAwesome icon class
-    title: 'Terraform & IaC', 
-    desc: 'Provisioning and managing cloud infrastructure as code securely and predictably.' 
+{
+  icon: 'fa-solid fa-terminal', // FontAwesome class registration
+  title: 'Systems Automation',
+  desc: 'Developing enterprise-scale custom scripts for tracking telemetry and log routing via webhooks.',
+  tag: 'Automation'
 }
 ```
 ### 2. Add Experience or Education
-Add a new object to the `journeyData` array:
+Add a new object to the `EXP` array:
 
 ```JavaScript
 {
-    type: 'Work Experience', // or 'Education'
-    year: '2026 – Present',
-    title: 'Junior Cloud Engineer',
-    company: 'Tech Corp',
-    desc: 'Managing AWS infrastructure, optimizing CI/CD pipelines, and reducing deployment times.'
+  year: '2026 – Present',
+  title: 'Infrastructure & Systems Automation Engineer',
+  company: 'Altezzasys INC',
+  domain: '[www.altezzasys.com](https://www.altezzasys.com)', // For Using Company Favicon
+  bullets: [
+    '<b>Integration Engineering:</b> Architecting automated real-time hardware-to-cloud sync structures.',
+    '<b>System Telemetry:</b> Deploying custom scripts to audit distributed network endpoints.'
+  ]
 }
 ```
 ### 3. Add a New Project
-Add a new object to the `projectsData` array:
+Add a new object to the `PROJECTS` array:
 
 ```JavaScript
 {
-    title: 'Serverless Data Pipeline',
-    description: 'Built an automated event-driven pipeline using AWS Lambda, S3, and DynamoDB.',
-    imageUrl: 'assets/images/serverless-pipeline.webp',
-    tags: ['AWS Lambda', 'Python', 'DynamoDB'],
-    link: 'https://github.com/shivam-bhardwaj-cloud/serverless-pipeline'
+  title: 'Endpoint Telemetry Automation Gateway',
+  desc: 'Configured robust logic matrices to collect data and stream endpoint logs directly to centralized secure webhooks.',
+  img: 'assets/images/audit-automation.webp',
+  tags: ['PowerShell', 'Webhooks', 'Logs', 'Automation'],
+  link: 'https://github.com/shivam-bhardwaj-cloud', // Links of your Project
+  num: '05'
 }
 ```
 The JavaScript handles the rest, automatically rendering the new cards into the CSS Grid.
