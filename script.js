@@ -2,10 +2,10 @@
    DATA
 ═══════════════════════════════════════════════════════ */
 const SKILLS=[
-  {icon:'fa-brands fa-linux',title:'Linux Administration',desc:'RHEL & Ubuntu mastery — user permissions, network security, Shell Scripting, and process automation across 600+ endpoints.',tag:'Server Admin'},
-  {icon:'fa-brands fa-aws',title:'AWS Cloud Architecture',desc:'Highly available EC2, S3, IAM & VPC deployments. Security-first, cost-optimized cloud infrastructure that scales.',tag:'Cloud'},
-  {icon:'fa-solid fa-gears',title:'DevOps & CI/CD',desc:'Git/GitHub workflows, automated pipelines, and streamlined code-to-production processes that eliminate deployment friction.',tag:'Automation'},
-  {icon:'fa-brands fa-docker',title:'Containers & Kubernetes',desc:'Dockerfiles, Docker Compose multi-service apps, and K8s deployments with HPA, Ingress, and fault-tolerance built in.',tag:'Orchestration'},
+  {icon:'fa-brands fa-linux',title:'Systems Engineering',desc:'Core RHEL/Ubuntu & Windows Server administration — log telemetry analytics (Journalctl), secure RDP/SSH gateways, and enterprise Active Directory management.',tag:'Server Infrastructure'},
+  {icon:'fa-brands fa-aws',title:'Cloud Infrastructure',desc:'Designing highly available cloud environments on AWS & Azure. Multi-tier application orchestration, containerization, and cost-reduction audits.',tag:'Cloud Systems'},
+  {icon:'fa-solid fa-gears',title:'Enterprise Integrations',desc:'Architecting real-time physical hardware-to-cloud API gateway sync matrices and localized database management to eliminate operational bottlenecks.',tag:'Integrations'},
+  {icon:'fa-solid fa-terminal',title:'Automation & Scripting',desc:'Developing enterprise-scale custom PowerShell and Bash scripts for endpoint telemetry extraction, data reconciliation, and log routing via webhooks.',tag:'Automation'},
 ];
 
 const TOOLS=[
@@ -26,26 +26,26 @@ const TOOLS=[
 const EXP=[
   {
     year:'Mar 2026 – Present',
-    title:'IT Support Executive — Infrastructure & Automation',
+    title:'Infrastructure & Systems Automation Engineer',
     company:'Altezzasys INC',
     domain:'www.altezzasys.com',
     bullets:[
-      '<b>System Integration:</b> Deployed MS-SQL server via RDP bridging biometric hardware with Keka HRMS SaaS.',
-      '<b>Monitoring Automation:</b> PowerShell scripts auditing 600+ enterprise endpoints, routed via Discord Webhooks.',
-      '<b>Cloud FinOps:</b> Containerized apps & migrated static assets to GitHub Pages — significant cost reduction.',
-      '<b>Data Engineering:</b> XLOOKUP pipelines compressing master datasets from <b>32 MB → 152 KB</b>.',
+      '<b>Enterprise Cloud Integration:</b> Built real-time physical hardware-to-cloud data pipelines bridging biometric assets with Keka HRMS via API gateway.',
+      '<b>Telemetry Automation:</b> Engineered custom PowerShell automation scripts to audit 200+ endpoints, streaming logs via secure webhooks.',
+      '<b>FinOps Optimization:</b> Containerized core profiles using Docker & stress-tested on Azure Container Apps, reducing infrastructure hosting overhead.',
+      '<b>Data Pipeline Compression:</b> Overhauled legacy tracking datasets using advanced structural logic, compressing payloads from <b>32 MB → 152 KB</b>.',
     ]
   },
   {
     year:'Apr 2025 – Dec 2025',
-    title:'IT Support Intern — Infrastructure & Systems',
+    title:'Infrastructure & Systems Engineering Intern',
     company:'NetCreativeMind Solutions',
     domain:'www.netcreativemind.com',
     bullets:[
-      '<b>Server Admin:</b> Managed 8+ on-prem servers with Journalctl log analysis, maintaining <b>99.9% uptime</b>.',
-      '<b>IAM & Security:</b> Active Directory lifecycles & NTFS permissions for RDP/SSH access control.',
-      '<b>Network Ops:</b> Resolved critical DNS failures, IP conflicts, and VPN connectivity issues.',
-      '<b>Deployment:</b> Automated OS provisioning for 50+ workstations across multiple regional offices.',
+      '<b>Server & Log Admin:</b> Monitored 8+ hybrid enterprise servers, utilizing deep system telemetry (Journalctl) to maintain <b>99.9% uptime</b>.',
+      '<b>Identity & Access (IAM):</b> Managed complete user lifecycles, role-based access, and NTFS permissions via Active Directory (ADDS).',
+      '<b>Infrastructure Deployment:</b> Standardized baseline system configurations and automated OS provisioning across 50+ multi-regional workstations.',
+      '<b>Network Troubleshooting:</b> Resolved critical tier-2 infrastructure routing faults, DNS connectivity failures, and secure VPN gateway issues.',
     ]
   },
   {
@@ -418,10 +418,10 @@ function initTerminal(){
     {type:'out',text:'2025-03-12  152 KB   master-data.xlsx',cls:'gold'},
     {type:'out',text:'2025-03-12  18.4 MB  backups/'},
     {type:'gap'},
-    {type:'cmd',prompt:'shivam@cloud',path:'~/automation',cmd:'./deploy.sh --env=prod --zero-downtime'},
-    {type:'out',text:'[ ✓ ] Health checks passed'},
-    {type:'out',text:'[ ✓ ] Rolling update initiated',cls:'green'},
-    {type:'out',text:'[ ✓ ] 3/3 pods running — zero downtime achieved',cls:'gold'},
+    {type:'cmd',prompt:'shivam@systems',path:'~/automation',cmd:'./audit_endpoints.ps1 --target=200 --stream=webhook'},
+    {type:'out',text:'[ ✓ ] Hardware telemetry extracted successfully'},
+    {type:'out',text:'[ ✓ ] Log payload compressed & securely routed to Webhook',cls:'green'},
+    {type:'out',text:'[ ✓ ] 200/200 production endpoints audited — zero latency',cls:'gold'},
     {type:'cursor'},
   ];
 
