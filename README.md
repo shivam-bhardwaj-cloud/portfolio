@@ -1,39 +1,39 @@
-# Shivam Bhardwaj — Cloud Engineer & Linux Admin Portfolio
+# Shivam Bhardwaj — Infrastructure & Systems Engineering Portfolio
 
-Welcome to my professional portfolio repository. 
+Welcome to the official repository of my engineering portfolio website. 
 
-This project is built with a **SaaS-inspired, high-performance architecture** designed to be lightweight, lightning-fast, and easily readable. It highlights my core competencies in Linux Administration, AWS, Docker, and CI/CD pipelines.
+This infrastructure is built with a **SaaS-inspired, high-performance architecture** engineered to be enterprise-grade, lightweight, and lightning-fast. It acts as a live programmatic demonstration of my core competencies in Systems Administration, Infrastructure Automation, Enterprise-to-Cloud Data Integrations, and Modern System Architectures.
 
-🌐 **Live Production Demo:** [https://shivam-bhardwaj-cloud.github.io/portfolio/](https://shivam-bhardwaj-cloud.github.io/portfolio/)
-
----
-
-## 🚀 Architecture & Mindset
-
-As a Cloud & DevOps Engineer, I believe in efficiency, high availability, and clean systems. I engineered this portfolio to reflect those values:
-- **Zero-Bloat:** No heavy frameworks (React, Vue, etc.). Just clean HTML5, CSS3, and Vanilla JavaScript.
-- **Data-Driven UI:** The DOM is injected dynamically via JavaScript arrays, mimicking how a frontend consumes a backend API. 
-- **SaaS Layout:** Optimized for instant scannability, utilizing CSS Grid and Flexbox for a flawless mobile-to-desktop responsive experience.
-- **Premium UI:** A custom "Gold and True Black" glassmorphism theme that is easy on the eyes and highly professional.
+🌐 **Live Production Deployment:** [https://shivam-bhardwaj-cloud.github.io/portfolio/](https://shivam-bhardwaj-cloud.github.io/portfolio/)
 
 ---
 
-## 🌿 Version Control Note
+## 🚀 Architecture & Technical Mindset
 
-This repository actively utilizes Git branching:
-- `main`: The current, highly-optimized, fast-loading SaaS layout.
-- `v1`: My legacy portfolio featuring complex, continuous CSS animations and particle effects. (Check out the `v1` branch if you want to see some heavy CSS UI manipulation!)
+As an Infrastructure Engineer, I prioritize absolute efficiency, system reliability, and clean execution. This platform was engineered from scratch to reflect those exact engineering guidelines:
+- **Zero-Bloat Engineering:** Zero heavy frameworks (React, Vue, angular). Constructed entirely using pure Semantic HTML5, performance-tuned CSS3 custom tokens, and Vanilla JavaScript to minimize browser rendering overhead.
+- **Data-Driven Architecture:** The DOM is completely decoupled from content; data payloads are injected dynamically via JavaScript objects and arrays, mimicking how a modern microservices client consumes a backend API gateway.
+- **High-Scannability Layout:** Engineered utilizing strict CSS Grid matrices and Flexbox systems for a responsive, flawless mobile-to-desktop viewport experience.
+- **Premium Interface Design:** Implements a hardened glassmorphic "Gold and True Black" style wrapper designed for high-end corporate scannability.
 
 ---
 
-## 📂 Repository Structure
+## 🌿 Version Control Protocol
+
+This production repository actively runs an optimized Git branching strategy:
+- `main`: The current, lightweight, performance-tuned modular layout.
+- `v1`: Legacy release footprint containing continuous heavy CSS animations and interactive canvas particle manipulation.
+
+---
+
+## 📂 System File Structure
 
 ```text
 portfolio/
 ├── assets/
 │   ├── images/
-│   └── docs/ (Resume)
-├── index.html
+│   └── docs/
+├── index.htm
 ├── style.css
 ├── script.js
 └── README.md
@@ -44,7 +44,7 @@ portfolio/
 - To add new skills, experience, or projects, simply open `script.js` and drop a new object into the respective array:
 
 ### 1. Add a New Tech Skill
-Add a new object to the `skillsData` array:
+Add a new object to the `SKIILS` array:
 ```javascript
 { 
     icon: '<i class="fa-solid fa-server"></i>', // Use any FontAwesome icon class
